@@ -22,4 +22,8 @@ class Song
       self.artist.name = name
     end
   end
+
+  def save
+    artist.all << self
+  end
 end
