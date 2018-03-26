@@ -22,7 +22,7 @@ class Artist
        return name
      else
        artist = self.new(name)
-    #   artist.name = name
+       artist.name = name
        artist      end
    end
 
