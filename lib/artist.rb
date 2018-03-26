@@ -18,7 +18,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-     @@all.include? name ? Artist.name : @@all << Artist.new(name)
+     @@all.include? name ?  : @@all.detect(name) << Artist.new(name)
    end
 
    def print_songs
