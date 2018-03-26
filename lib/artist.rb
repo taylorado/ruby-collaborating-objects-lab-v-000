@@ -17,11 +17,11 @@ class Artist
     @songs << some_song
   end
 
-  def self.find_or_create_by_name(name)
-     if @@all.include? name
-       return name
+  def self.find_or_create_by_name(artist_name)
+     if @@all.include? artist_name
+       return artist_name
      else
-        Artist.new(name)
+        Artist.new(artist_name)
       end
    end
 
