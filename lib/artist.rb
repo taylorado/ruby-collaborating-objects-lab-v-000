@@ -10,7 +10,7 @@ class Artist
   end
 
   def songs
-  @songs
+  @songs unless @songs == nil
   end
 
   def self.all
