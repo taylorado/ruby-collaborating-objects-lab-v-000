@@ -18,8 +18,8 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-     if @@all.include? name 
-       return @@all.detect {|nam| nam == name} 
+     if @@all.include? name
+       return @@all.detect {|nam| nam == name}
      else
         Artist.new(name)
       end
